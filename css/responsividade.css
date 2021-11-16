@@ -1,0 +1,59 @@
+@media (max-width: 900px) {
+  .nav-bar{
+    font-size: 0.975rem !important;
+  }
+
+  .principal{
+    font-size: 1.5rem;
+    margin: 0 10px;
+  }
+
+}
+
+@media (max-width: 748px) {
+  .hero {
+    /* background-color: green; */
+    max-height: 500px;
+    align-content: center;
+    background-size: cover;
+  }
+
+  .principal{
+    font-size: 1rem;
+    margin: 0 10px;
+  }
+
+  .title {
+    padding-top: 0;
+  }
+
+  .explore-btn {
+    max-width: 200px;
+    font-size: 0.875rem;
+
+    margin-top: 3rem;
+    padding: 1rem;
+  }
+
+  #menu-mobile {
+    display: initial;  
+  }
+
+  .nav-bar{
+    display: none;
+    flex-direction: column;
+
+    align-items: start;
+
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+
+    background-color: var(--text-white);
+  }
+
+  header {
+    height: 90px;
+  }
+}

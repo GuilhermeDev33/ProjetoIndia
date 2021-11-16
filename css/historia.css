@@ -1,0 +1,168 @@
+.historia{
+    width: 100%;
+    padding-top: 60px;
+}
+
+.historia .container1{
+    width: 1200px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto
+}
+
+.historia .titulo_historia{
+    margin: 20px auto;
+    width: 200px;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 25px;
+    color: #333;
+    border-bottom: 2px solid #ff751a;
+}
+
+
+.historia .container1 .conteudo{
+    width: 500px;
+    text-align: justify;
+    font-family: arial;
+    color: #333;
+    line-height: 2rem;
+}
+
+.historia .container1 .conteudo .ti{
+    font-size: 20px;
+}
+
+.historia .container1 .arte_todo{
+    width: 400px;
+    height: 200px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 30px;
+}
+
+.historia .container1 .arte_todo li {
+    font-family: 'Arial';
+    line-height: 1.2rem;
+    color: #333;
+}
+
+.historia .container1 .arte_todo .arte{
+    font-family: 'Allison', cursive;
+    text-align: center;
+}
+
+/* List-items */
+
+
+
+.list-items {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 25px;
+    /* background-color: #ff751a; */
+}
+
+ 
+
+.father-item {
+    list-style: none;
+    font-family: 'Arial';
+    padding: 0;
+    margin: 15px 0;
+    font-size: 16px;
+    cursor: pointer;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    display: block;
+}
+
+ 
+
+/* .image-bandeira {
+    display: block;
+    margin: 20px auto;
+    max-width: 450px;
+} */
+
+ 
+
+.father-item li {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    align-self: center;
+}
+
+ 
+
+.father-item li::after {
+    content: url('../img/arrow-right.svg');
+    margin-left: 15px;
+    transition: .2s ease-in-out;
+}
+
+
+.father-item li.ativo::after {
+    transform:  translate(0px, -2px) rotate(90deg);
+    transition: .2s ease-in-out;
+}
+
+.child-item {
+    display: none;
+    margin-top: 40px;
+    color: #333;
+    line-height: 2rem;
+}
+
+.child-item.ativo {
+    display: block !important;
+    animation: slide .4s forwards;
+}
+
+@keyframes slide{
+    from{
+      opacity: 0;
+      transform: translate3d(0, -30px, 0);
+    }
+    to{
+      opacity: 1;
+      transform: translate3d(0,0,0);
+    }
+  }
+
+/* SESSÃO HISTÓRIA RESPONSIVO */
+
+@media (max-width: 1100px){
+    .historia .container1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    
+    .historia .container1 .conteudo{
+        width: 80%;
+    }
+    
+    .historia .container1 .conteudo .ti{
+        font-size: 18px;
+    }
+    
+    .historia .container1 .arte_todo{
+        width: 80%;
+    }
+}
+
+@media (max-width: 643px){
+    .historia .titulo_historia{
+        width: 93%;
+      
+    }
+}

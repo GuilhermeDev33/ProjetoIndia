@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>india+ - Quiz - Teste seu conhecimento</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" text="text/css" href="../css/menu.css">
+    <link rel="stylesheet" text="text/css" href="../css/footer.css">
+    <link rel="stylesheet" text="text/css" href="../css/responsividade.css">
+	<link rel="stylesheet" href="style/style.css"/>
+    <link rel="stylesheet" href="style/style.css"/>
+</head>
+<body>
+	 <!--MENÚ-->   
+	 <header>
+		<div class="logo-nav">
+		  <a href="../index.html#index">Índia+</a>
+		</div>
+		  <button id="menu-mobile" class>
+			<span></span>
+			<span></span>
+			<span></span>
+		  </button>
+		  <ul class="nav nav-bar">
+			<li><a href="../index.html#index">Home</a></li>
+			<li><a href="../index.html#historia">Historia</a></li>
+			<li><a href="../index.html#galeria">Pontos Turísticos</a></li>
+			<li><a href="html#quiz">Quiz</a></li>
+			<link rel="icon" type="image/jpg" sizes="16x16" href="../img/icon.jpg">
+		  </ul>
+	  </header>
+
+	<div class="container" id="quiz">
+		<h1>Quiz - Quanto você sabe sobre a Índia?</h1>
+
+		<form name="Fquiz" method="post" onsubmit="event.preventDefault();">
+
+			<div class="questions">
+				<h3 class="title-question">1 - Qual era uma das figuras mais importantes para a libertação da Índia?</h3>
+				<input type="button" name="B1" onclick="verifica1(1, event)" value="A"> Mahatma Gandhi<br><br>
+				<input type="button" name="B2" onclick="verifica1(0, event)" value="B"> Britânicos <br><br>
+				<input type="button" name="B3" onclick="verifica1(0, event)" value="C"> Adeptos do Islanismo<br><br>
+				<input type="button" name="B4" onclick="verifica1(0, event)" value="D"> Mohamed Ali Jinnah
+			</div>
+			<div class="questions">
+				<h3 class="title-question">2 - Qual era o ideal realizado para a indipendência da Índia?</h3>
+				<input type="button" name="B5" onclick="verifica2(0, event)" value="A"> Violência<br><br>
+				<input type="button" name="B6" onclick="verifica2(0, event)" value="B"> Terrorismo<br><br>
+				<input type="button" name="B7" onclick="verifica2(1, event)" value="C"> Pacifismo<br><br>
+				<input type="button" name="B8" onclick="verifica2(0, event)" value="D"> Mercantilismo
+			</div>
+				
+			<div class="questions">
+				<h3 class="title-question">3 - O que significa o simbolo no centro da bandeira da Índia?</h3>
+				<input type="button" name="B9" onclick="verifica3(0, event)" value="A"> Espiritismo<br><br>
+				<input type="button" name="B10" onclick="verifica3(0, event)" value="B"> Liberdade<br><br>
+				<input type="button" name="B11" onclick="verifica3(1, event)" value="C"> Justiça<br><br>
+				<input type="button" name="B12" onclick="verifica3(0, event)" value="D"> Pacifismo
+			</div>
+				
+			<div class="questions">
+				<h3 class="title-question">4 - Quais as proporções da bandeira da Índia?</h3> 
+				<input type="button" name="B13" onclick="verifica4(0, event)" value="A"> 3:4<br><br>
+				<input type="button" name="B14" onclick="verifica4(1, event)" value="B"> 2:3<br><br>
+				<input type="button" name="B15" onclick="verifica4(0, event)" value="C"> 3:2<br><br>
+				<input type="button" name="B16" onclick="verifica4(0, event)" value="D"> 2:2
+			</div>
+				
+			<div class="questions">
+				<h3 class="title-question">5 - Qual foi um dos conflitos mais importantes para a Índia?</h3>
+				<input type="button" name="B17" onclick="verifica5(1, event)" value="A"> Conflito de caxemira<br><br>
+				<input type="button" name="B18" onclick="verifica5(0, event)" value="B"> Guerra fria<br><br>
+				<input type="button" name="B19" onclick="verifica5(0, event)" value="C"> Segunda guerra mundial<br><br>
+				<input type="button" name="B20" onclick="verifica5(0, event)" value="D"> guerra do vietnã
+			</div>
+				
+			<div class="questions">
+				<h3 class="title-question">6 - Que país ele combateu para ter sua indipendência?</h3>
+				<input type="button" name="B21" onclick="verifica6(0, event)" value="A"> Portugal<br><br>
+				<input type="button" name="B22" onclick="verifica6(0, event)" value="B"> Espanha<br><br>
+				<input type="button" name="B23" onclick="verifica6(0, event)" value="C"> Estados Unidos da América<br><br>
+				<input type="button" name="B24" onclick="verifica6(1, event)" value="D"> Inglaterra
+			</div>
+				
+			<div class="questions">
+			
+				<h3 class="title-question">7 - Quem a Índia apoiou na Guerra Fria?</h3>
+				<input type="button" name="B25" onclick="verifica7(1, event)" value="A"> URSS <br><br>
+				<input type="button" name="B26" onclick="verifica7(0, event)" value="B"> Estados Unidos da América<br><br>
+			</div>
+
+			<input type="submit" name="enviar" onclick="contar()">
+			
+
+			<p class="text" >Você acertou:</p> <input type="text" name="certosQ" disabled> 
+
+		</form>
+	</div>
+	<!--------FOOTER------- -->
+	<footer>
+		<div class="tudo">
+		  <p class="p">Índia+</p>
+		  <p>Todos os direitos reservados ao India+</p>
+		  <p>(11)987654321</p>
+		</div>
+	  </footer>
+
+
+	<script language="javascript" src="../js/script.js"></script>
+	<script src="quiz.js" type="text/javascript"></script>
+</body>
+</html>

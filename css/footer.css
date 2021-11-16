@@ -1,0 +1,29 @@
+footer{
+    width: 100%;
+    font-family: arial;
+    font-size: 18px;
+    padding: 20px 0px;
+   
+}
+
+footer .tudo{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+
+@media (max-width: 1200px){
+
+    footer .tudo{
+        
+        display: flex;
+        flex-direction: column; 
+    }
+
+}
