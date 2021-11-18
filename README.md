@@ -15,8 +15,7 @@
 </ul>
 
 <h3>Print das telas</h3>
-<p>Nessa sessão, veremos como ficou as telas do site India+.</p>![galeria](https://user-images.githubusercontent.com/94310646/142494255-2b809ae1-6428-4d00-aeaf-250bb65fb0eb.png)
-
+<p>Nessa sessão, veremos como ficou as telas do site India+.</p>
 
 <h4>Menu</h4>
   <center><img src="img/README/menu.png"></center>
